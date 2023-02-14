@@ -1,0 +1,48 @@
+/* RESET CSS */
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    margin-top: 4%;
+    text-align: left;
+    margin-left: 5%;
+}
+
+form {
+    margin-top: 10%;
+}
+
+label, button {
+    display: block;
+}
+
+label {
+    margin-left: 4%;
+    font-weight: bold;
+    padding: 8px 0px 8px 0px;
+}
+
+.inputTexto {
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 100%;
+    max-width: 90%;
+    padding: 3.5%;
+    border: 2px solid black;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    text-align: center;
+
+
+}
