@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIRO-PAULISTA: CADASTRO #4</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <h1>Cadastro</h1>
+    <p>Preencha os campos abaixo para realizar seu cadastro:</p>
+    <form action="" method="post">
+      <div id="divForm">
+        <!-- Campos atuação, redes sociais, bio, foto -->
+        <label for="atuaCadastro">Atuação profissional:</label>
+        <input
+          id="atuaCadastro"
+          class="inputTexto"
+          type="text"
+          placeholder="Digite sua profissão..."
+        />
+        <label for="redesCadastro">Redes sociais:</label>
+        <input
+          id="redesCadastro"
+          class="inputTexto"
+          type="text"
+          placeholder="Digite uma rede social..."
+        />
+        <label for="bioCadastro">Biografia:</label>
+        <input
+          id="bioCadastro"
+          class="inputTexto"
+          type="text"
+          placeholder="Digite uma descrição para seu perfil..."
+        />
+        <label for="fotoCadastro">Foto:</label>
+        <input
+          id="fotoCadastro"
+          class="inputTexto"
+          type="file"
+          placeholder="Envie uma foto de perfil..."
+        />
+      </div>
+      <div id="divFormButton">
+        <button type="submit">Confirmar</button>
+      </div>
+    </form>
+  </body>
+</html>

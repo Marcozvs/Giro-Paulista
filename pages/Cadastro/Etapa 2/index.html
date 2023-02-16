@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIRO-PAULISTA: CADASTRO #2</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <h1>Cadastro</h1>
+    <p>Preencha os campos abaixo para realizar seu cadastro:</p>
+    <form action="" method="post">
+      <div id="divForm">
+        <!-- Campos cpf, data de nascimento, gênero e telefone -->
+        <label for="cpfCadastro">CPF:</label>
+        <input
+          id="cpfCadastro"
+          class="inputTexto"
+          type="number"
+          placeholder="Digite seu CPF..."
+        />
+        <label for="nasciCadastro">Data de nascimento:</label>
+        <input
+          id="nasciCadastro"
+          class="inputTexto"
+          type="date"
+          placeholder="Digite sua data de nascimento..."
+        />
+        <label for="genCadastro">Gênero:</label>
+        <input
+          id="genCadastro"
+          class="inputTexto"
+          type="text"
+          placeholder="Digite uma gênero..."
+        />
+        <label for="telCadastro">Telefone:</label>
+        <input
+          id="telCadastro"
+          class="inputTexto"
+          type="tel"
+          placeholder="Digite seu número de telefone..."
+        />
+      </div>
+      <div id="divFormButton">
+        <button type="submit">Próximo</button>
+      </div>
+    </form>
+  </body>
+</html>
