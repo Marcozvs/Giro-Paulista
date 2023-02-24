@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIRO-PAULISTA: PUBLICAR</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles..css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <span>
+        <i class="fa fa-bars"></i>
+      </span>
+      <p id="header__title">Giro Paulista</p>
+      <span>
+        <i class="fa fa-user"></i>
+      </span>
+    </header>
+    <main class="container">
+      <h1>Publicar</h1>
+      <p>Preencha os campos abaixo para publicar o novo conteúdo</p>
+      <form>
+        <!-- Campo Título -->
+        <label for="title">Título:</label>
+        <input
+          required
+          name="title"
+          type="text"
+          placeholder="Digite o título do conteúdo..."
+        />
+        <!-- Campo Texto -->
+        <label for="text">Texto:</label>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          required
+          placeholder="Digite o texto do conteúdo..."
+        ></textarea>
+        <!-- Campo Imagem -->
+        <label for="image">Imagem:</label>
+        <input name="image" type="file" placeholder="Insira uma imagem..." />
+        <input type="submit" value="Confirmar">
+      </form>
+    </main>
+  </body>
+</html>

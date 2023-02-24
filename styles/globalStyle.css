@@ -5,94 +5,177 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
   text-decoration: none;
   color: black;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Colors */
 
-:root{
-  --white: #FFFFFF;
+:root {
+  --white: #ffffff;
   --black: #111111;
   --gray: #727272;
-  --orange: #FF7223;
+  --orange: #ff7223;
 }
 
 /* Texts */
 
-:root{
-  font-family: 'Inter', sans-serif;
+:root {
+  --firstFont: "Inter", sans-serif;
+  --secondFont: "Noto Serif", serif;
+  font-family: "Inter", sans-serif;
   color: var(--black);
   line-height: 2rem;
 }
 
-h1{
+h1 {
   font-weight: 700;
   font-size: 2rem;
   text-align: center;
 }
 
-h2{
+h2 {
   font-weight: 700;
   font-size: 1.5rem;
   text-align: center;
 }
 
-h3{
+h3 {
   font-weight: 700;
   font-size: 1.25rem;
   text-align: center;
 }
 
-p{
+p {
   line-height: 2rem;
 }
 
 /* Container */
 
-.container{
+.container {
   margin: 0 5vw;
   box-sizing: border-box;
   text-align: justify;
@@ -100,7 +183,7 @@ p{
 
 /* Header */
 
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -111,11 +194,12 @@ header{
   background: var(--black);
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
+  margin-bottom: 1rem;
 }
 
-#header__title{
+#header__title {
   color: var(--white);
-  font-family: 'UnifrakturMaguntia', cursive;
+  font-family: "UnifrakturMaguntia", cursive;
   font-weight: 400;
   font-size: 32px;
   text-align: center;
@@ -124,6 +208,78 @@ header{
 
 /* Icons */
 
-span i{
+span i {
+  color: var(--white);
+}
+
+/* Form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+label{
+  font-weight: 700;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  padding: 16px;
+  gap: 16px;
+  width: 100%;
+  height: 50px;
+  background: var(--white);
+  border: 2px solid var(--black);
+  border-radius: 2px;
+}
+
+input[type=file] {
+  box-sizing: border-box;
+  padding: 16px 0px;
+  gap: 16px;
+  width: 100%;
+  height: 50px;
+  background: var(--white);
+}
+
+textarea {
+  box-sizing: border-box;
+  padding: 16px;
+  gap: 16px;
+  width: 100%;
+  height: 50px;
+  background: var(--white);
+  border: 2px solid var(--black);
+  border-radius: 2px;
+  font-family: var(--firstFont);
+  font-size: 1rem;
+}
+
+select {
+  box-sizing: border-box;
+  padding: 16px;
+  gap: 8px;
+  width: 100%;
+  height: 75px;
+  background: var(--white);
+  border: 2px solid var(--black);
+  border-radius: 2px;
+  font-family: var(--firstFont);
+  font-size: 1rem;
+}
+
+/* Buttons */
+
+input[type=submit], button {
+  width: 100%;
+  background-color: var(--black);
+  height: 50px;
+  border-radius: 2px;
+  border: 2px solid var(--black);
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: var(--firstFont);
   color: var(--white);
 }
