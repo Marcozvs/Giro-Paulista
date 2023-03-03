@@ -7,45 +7,63 @@
     <title>GIRO-PAULISTA: CADASTRO #1</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="./index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap");
+    </style>
   </head>
   <body>
-    <h1>Cadastro</h1>
-    <p>Preencha os campos abaixo para realizar seu cadastro:</p>
-    <form action="" method="post">
-      <div id="divForm">
-        <!-- Campos nome completo, email, senha, confirmar senha -->
-        <label for="nomeCadastro">Nome completo:</label>
-        <input
-          id="nomeCadastro"
-          class="inputTexto"
-          type="text"
-          placeholder="Digite seu nome completo..."
-        />
-        <label for="emailCadastro">Email:</label>
-        <input
-          id="emailCadastro"
-          class="inputTexto"
-          type="email"
-          placeholder="Digite seu email..."
-        />
-        <label for="senhaCadastro">Senha:</label>
-        <input
-          id="senhaCadastro"
-          class="inputTexto"
-          type="password"
-          placeholder="Digite uma senha..."
-        />
-        <label for="confSenhaCadastro">Confirmar senha:</label>
-        <input
-          id="confSenhaCadastro"
-          class="inputTexto"
-          type="password"
-          placeholder="Confirme sua senha..."
-        />
-      </div>
-      <div id="divFormButton">
-        <button type="submit">Próximo</button>
-      </div>
-    </form>
+    <header>
+      <span>
+        <i class="fa fa-bars"></i>
+      </span>
+      <p id="header__title">Giro Paulista</p>
+      <span>
+        <i class="fa fa-user"></i>
+      </span>
+    </header>
+    <main>
+      <h1>Cadastro</h1>
+      <p>Preencha os campos abaixo para realizar seu cadastro:</p>
+      <form action="" method="post">
+        <div id="divForm">
+          <!-- Campos nome completo, email, senha, confirmar senha -->
+          <label for="nomeCadastro">Nome completo:</label>
+          <input
+            id="nomeCadastro"
+            class="inputTexto"
+            type="text"
+            placeholder="Digite seu nome completo..."
+          />
+          <label for="emailCadastro">Email:</label>
+          <input
+            id="emailCadastro"
+            class="inputTexto"
+            type="email"
+            placeholder="Digite seu email..."
+          />
+          <label for="senhaCadastro">Senha:</label>
+          <input
+            id="senhaCadastro"
+            class="inputTexto"
+            type="password"
+            placeholder="Digite uma senha..."
+          />
+          <label for="confSenhaCadastro">Confirmar senha:</label>
+          <input
+            id="confSenhaCadastro"
+            class="inputTexto"
+            type="password"
+            placeholder="Confirme sua senha..."
+          />
+        </div>
+        <div id="divFormButton">
+          <button type="submit">Próximo</button>
+        </div>
+      </form>
+    </main>
   </body>
 </html>

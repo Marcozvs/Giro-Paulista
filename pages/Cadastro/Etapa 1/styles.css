@@ -1,13 +1,8 @@
-/* RESET CSS */
-* {
-    padding: 0%;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-}
+/* Importando CSS GLOBAL */
+@import url(/styles/globalStyle.css);
 
-h1 {
+/* CSS da Página */
+/* h1 {
     margin-top: 4%;
     text-align: center;
 }
@@ -63,4 +58,4 @@ button {
 
 #linkCadastro {
     color: #FF7223;
-}
+} */
