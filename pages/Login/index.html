@@ -7,35 +7,54 @@
     <title>GIRO-PAULISTA: LOGIN</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="./index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap");
+    </style>
   </head>
   <body>
-    <h1>Entrar</h1>
-    <p>Preencha os campos abaixo para entrar:</p>
-    <form action="" method="get">
-      <div id="divForm">
-        <!-- Campo Email -->
-        <label for="emailLogin">Email:</label>
-        <input
-          id="emailLogin"
-          class="inputTexto"
-          type="email"
-          placeholder="Digite seu email..."
-        />
-        <!-- Campo Senha -->
-        <label for="senhaLogin">Senha</label>
-        <input
-          id="senhaLogin"
-          class="inputTexto"
-          type="password"
-          placeholder="Digite sua senha..."
-        />
-      </div>
-      <div id="divFormButton">
-        <button type="submit">Confirmar</button>
-        <!-- Link para página de cadastro -->
-        <a id="linkCadastro" href="../Cadastro/index.html">Cadastre-se</a>
-      </div>
-    </form>
-
+    <header>
+      <span>
+        <i class="fa fa-bars"></i>
+      </span>
+      <p id="header__title">Giro Paulista</p>
+      <span>
+        <i class="fa fa-user"></i>
+      </span>
+    </header>
+    <main>
+      <h1>Entrar</h1>
+      <p>Preencha os campos abaixo para entrar:</p>
+      <form action="" method="get">
+        <div id="form__div">
+          <!-- Campo Email -->
+          <label for="login__email">Email:</label>
+          <input
+            id="login__email"
+            class="form__input"
+            type="email"
+            placeholder="Digite seu email..."
+            required
+          />
+          <!-- Campo Senha -->
+          <label for="login__senha">Senha</label>
+          <input
+            id="login__senha"
+            class="form__input"
+            type="password"
+            placeholder="Digite sua senha..."
+            required
+          />
+        </div>
+        <div id="cadastro__div">
+          <button type="submit" id="form__confirmar">Confirmar</button>
+          <!-- Link para página de cadastro -->
+          <a id="cadastro__div__link" href="../Cadastro/index.html">Cadastre-se</a>
+        </div>
+      </form>
+    </main>
   </body>
 </html>

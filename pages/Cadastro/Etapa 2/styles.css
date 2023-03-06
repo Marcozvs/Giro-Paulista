@@ -1,11 +1,7 @@
-/* RESET CSS */
-* {
-    padding: 0%;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-}
+/* Importando CSS GLOBAL */
+@import url(../../styles/globalStyle.css);
+
+/* CSS da Página */
 
 h1 {
     margin-top: 4%;
