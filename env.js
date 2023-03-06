@@ -5,4 +5,4 @@
 // export const URL = "giro-paulista-release.vercel.app"
 
 //AMBIENTE DE DESENVOLVIMENTO
-export const URL = "[::1]"
+export const URL = "[::1]:3000"
