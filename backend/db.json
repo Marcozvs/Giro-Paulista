@@ -115,5 +115,52 @@
       "biografia": "",
       "primeiro-acesso": true
     }
+  ],
+  "noticias": [
+    {
+      "contexto": "brasil",
+      "conteudo": []
+    },
+    {
+      "contexto": "mundo",
+      "conteudo": []
+    },
+    {
+      "contexto": "politica",
+      "conteudo": []
+    },
+    {
+      "contexto": "economia",
+      "conteudo": [
+        {
+          "id": 1,
+          "title": "China se torna o maior mercado",
+          "contexto": "economia",
+          "descricao": "Durante os úlitmos anos a China vem crescendo no mercado, hoje depois da abertura do mercado a China se torna líder do mercado mundial",
+          "Autor": "Eduardo Silveira",
+          "fotoAutor": ""
+        }
+      ]
+    },
+    {
+      "contexto": "esportes",
+      "conteudo": []
+    },
+    {
+      "contexto": "ciencia",
+      "conteudo": []
+    },
+    {
+      "contexto": "arte",
+      "conteudo": []
+    },
+    {
+      "contexto": "saude",
+      "conteudo": []
+    },
+    {
+      "contexto": "educacao",
+      "conteudo": []
+    }
   ]
 }
